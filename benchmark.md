@@ -10,18 +10,25 @@ This document provides performance benchmarks for the algorithms included in the
 
 Any developer can replicate these results on their own machine to verify performance.
 
-1. **Clone the Repository**Bash
-    
-    `git clone https://github.com/fpiv/fpiv_Graph.git`
-    
-2. **Navigate to the Project Directory**Bash
-    
-    `cd fpiv_Graph`
-    
+
+1. **Clone the Repository**
+
+    ```bash
+    git clone https://github.com/fpiv/fpiv_Graph.git
+    ```
+
+2. **Navigate to the Project Directory**
+
+    ```bash
+    cd fpiv_Graph
+    ```
+
 3. **Run the Benchmark Script**
-The project includes a dedicated script to test all algorithms. Run the following command from the project's root directory:Bash
-    
-    `dart run .benchmark/benchmark.dart`
+    The project includes a dedicated script to test all algorithms. Run the following command from the project's root directory:
+
+    ```bash
+    dart run .benchmark/benchmark.dart
+    ```
     
 
 The script will run tests on graphs of 1,000, 10,000, and 100,000 elements (vertices/edges) and print the results to the console.
