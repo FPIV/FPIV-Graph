@@ -41,7 +41,7 @@ Add to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-	fpiv_graph: ^latest
+	fpiv_graph: 0.1.0
 ```
 
 Import in your Dart code:
