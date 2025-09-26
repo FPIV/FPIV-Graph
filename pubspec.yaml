@@ -1,7 +1,9 @@
 name: fpiv_graph
-description: A starting point for Dart libraries or applications.
+description: A comprehensive, high-performance graph algorithms library for Dart, built for speed and reliability in professional and educational projects.
 version: 1.0.0
-# repository: https://github.com/my_org/my_repo
+repository: https://github.com/FPIV/FPIV-Graph
+homepage: https://fpiv.org
+license: MIT
 
 environment:
   sdk: ^3.7.2
