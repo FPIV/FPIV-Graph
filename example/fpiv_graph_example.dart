@@ -18,40 +18,40 @@ void main() {
   print('DFS: ${dfs(gUnweighted, 'A')}');
   print(
     'Topological Sort (DAG): ${topologicalSort(<int, List<int>>{
-      1: [2],
-      2: [3],
-      3: [4],
-      4: [],
-    })}',
+          1: [2],
+          2: [3],
+          3: [4],
+          4: [],
+        })}',
   );
   print(
     'Connected Components: ${connectedComponents({
-      'A': ['B'],
-      'B': ['A'],
-      'C': [],
-    })}',
+          'A': ['B'],
+          'B': ['A'],
+          'C': [],
+        })}',
   );
   print(
     'Has Cycle Directed: ${hasCycleDirected(<int, List<int>>{
-      1: [2],
-      2: [3],
-      3: [1],
-    })}',
+          1: [2],
+          2: [3],
+          3: [1],
+        })}',
   );
   print(
     'Has Cycle Undirected: ${hasCycleUndirected({
-      'A': ['B', 'C'],
-      'B': ['A', 'C'],
-      'C': ['A', 'B'],
-    })}',
+          'A': ['B', 'C'],
+          'B': ['A', 'C'],
+          'C': ['A', 'B'],
+        })}',
   );
   print(
     'Is Bipartite: ${isBipartite({
-      1: [2, 4],
-      2: [1, 3],
-      3: [2, 4],
-      4: [1, 3],
-    })}',
+          1: [2, 4],
+          2: [1, 3],
+          3: [2, 4],
+          4: [1, 3],
+        })}',
   );
   print(
     'Shortest Path (unweighted): ${shortestPathUnweighted(gUnweighted, 'A', 'F')}',
@@ -94,11 +94,11 @@ void main() {
   print('Kosaraju SCC count: ${sccs.length}');
   print(
     'Articulation Points: ${articulationPoints(<int, List<int>>{
-      1: [2],
-      2: [1, 3, 4],
-      3: [2],
-      4: [2],
-    })}',
+          1: [2],
+          2: [1, 3, 4],
+          3: [2],
+          4: [2],
+        })}',
   );
   // Johnson's Algorithm
   final johnsonGraph = {

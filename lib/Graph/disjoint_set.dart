@@ -48,6 +48,6 @@ class DisjointSet<T> {
 
   /// Returns the current set representative for each element.
   Map<T, T> get sets => {
-    for (var element in _parent.keys) element: find(element),
-  };
+        for (var element in _parent.keys) element: find(element),
+      };
 }

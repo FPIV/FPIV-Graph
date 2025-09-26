@@ -50,9 +50,8 @@ Map<T, Map<T, num>> johnsonsAlgorithm<T>(Map<T, Map<T, num>> graph) {
   // Exclude the extra node 'q' from reweighting
   for (var u in originalNodes) {
     reweighted[u] = {};
-    for (var v
-        in (graph[u]?.keys.where((k) => originalNodes.contains(k)) ?? {})
-            .cast<T>()) {
+    for (var v in (graph[u]?.keys.where((k) => originalNodes.contains(k)) ?? {})
+        .cast<T>()) {
       reweighted[u]![v] = graph[u]![v]! + h[u]! - h[v]!;
     }
   }
